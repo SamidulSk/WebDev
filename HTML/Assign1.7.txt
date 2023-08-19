@@ -1,0 +1,18 @@
+explain in brief about the nesting operators in emmet
+ans:- Nesting operators in Emmet are special symbols or characters that allow you to define hierarchical relationships
+     between HTML elements in a concise manner.
+     example:-
+     1:- child operators:-
+                        div>ul>li means that the li element is a direct child of the ul element, 
+                         which is in turn a direct child of the div element.
+
+     2:- sibling operators:-
+                         The sibling operator indicates that elements are siblings or adjacent to each other.
+                            It is represented by the plus symbol (+). 
+                           For example, h2+p means that the p element is a sibling of the h2 element, 
+                    
+    3:-Multiplication Operator ():
+                       ul>li*3 means that the li element will be repeated three times within the ul element.
+    4:-Grouping Operator ({}): 
+                    The grouping operator is used to group elements together. It is represented by curly braces {}.
+                div>{Hello}+{World} means that the text "Hello" and "World" will be added as content to separate div elements.

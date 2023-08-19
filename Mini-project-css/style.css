@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Baloo+Da+2&family=Bebas+Neue&family=Luckiest+Guy&family=Titan+One&family=Unbounded&display=swap');
+
+* {
+    font-family: 'Alkatra', cursive;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+.navbar {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    box-shadow: 0px 2px rgb(rgb(197, 52, 52), rgb(35, 225, 35), rgb(30, 30, 213));
+    background-color: #d8cece;
+    z-index: 1;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 10px 0px;
+    vertical-align: middle;
+}
+
+.nav-item {
+    display: inline-block;
+    margin: 0px 20px;
+    padding-bottom: 0px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(114, 87, 222);
+    font-weight: bold;
+
+}
+
+.nav-link:hover {
+
+    color: rgb(25, 227, 99);
+    font-weight: bold;
+    cursor: cell;
+
+}
+
+article h1 {
+    font-size: 40px;
+}
+
+.content {
+    background: linear-gradient(#e22b2b, #8378d9);
+    padding: 30px 50px;
+  
+}
+
+.content>section {
+    margin: 100px 0px;
+
+}
+
+.float-right {
+    float: right;
+    margin-left: 50px;
+}
+
+.float-left {
+    float: left;
+    margin-right: 50px;
+}
+.bot-icon{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+.bot-icon img{
+   width: 100px;
+}

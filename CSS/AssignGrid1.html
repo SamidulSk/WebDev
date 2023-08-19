@@ -1,0 +1,67 @@
+<!-- landing page of a restaurent -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            border: 2px solid black;
+            height: 80vh;
+        }
+
+        .item {
+            margin: 8px;
+        }
+
+        .item-1 {
+            display: grid;
+            height: auto;
+            align-content: center;
+            margin-left: 30px;
+            margin-right: 40px;
+
+        }
+
+        button {
+            display: inline;
+            background-color: black;
+            margin-top: 30px;
+            color: white;
+            max-width: 100px;
+            padding: 5px 10px 5px 10px;
+
+        }
+
+        .item-2 {
+            background-color: yellow;
+        }
+
+        .item-2>img {
+            max-width: 430px;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item-1">
+            <h2>Healthy Food</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, in sapiente. Laudantium, sunt numquam,
+                vero necessitatibus officiis, modi debitis nemo eaque sint neque saepe deleniti adipisci obcaecati nam
+                quo. Blanditiis vel nobis quos, similique cupiditate officiis reprehenderit error eos nam molestias
+                voluptatem, illo atque, exercitationem mollitia quae commodi possimus tenetur.</p>
+            <button>Read More</button>
+        </div>
+        <div class="item item-2">
+            <img src="./food.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

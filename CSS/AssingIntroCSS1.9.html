@@ -1,0 +1,38 @@
+<!-- create a web page with registration form , using the CSS attribute selector change the text 
+color of each input field to any other color -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[required]{
+            background-color: #c28989;
+        }
+        input[name]{
+            background-color: aqua;
+        }
+        input[value]{
+            background-color: #7b7bce;
+        }
+        input[placeholder]{
+            background-color: #bdacd0;
+            color: #2308ee;
+        }
+    </style>
+</head>
+<body>
+    <label for="text">Enter first name</label>
+    <input type="text" required >
+    <br>
+    <label for="text">Enter middle name</label>
+    <input type="text" name="hii">
+    <br>
+    <label for="email">Enter Email</label>
+    <input type="email" value="@gmail.com">
+    <br>
+    <input type="numbers" placeholder="Enter PIN">
+
+</body>
+</html>

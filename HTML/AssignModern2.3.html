@@ -1,0 +1,49 @@
+<!-- Create a <audio> tag that has controls to pause, play, and adjust the volume -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+</head>
+
+<body>
+    <audio src="./dramatic-background-music-for-short-videos-1-minute-little-alicia-155718.mp3" id="myAudio"
+        controls></audio>
+    <button onclick="decreaseVolume()">Decrease Volume</button>
+    <button onclick="increaseVolume()">Increase Volume</button>
+    <button onclick="playAudio()">Play</button>
+    <button onclick="pauseAudio()">Pause</button>
+    <button onclick="stopAudio()">Stop</button>
+
+    <script>
+        var audio = document.getElementById("myAudio");
+
+        function decreaseVolume() {
+            if (audio.volume > 0) {
+                audio.volume -= 0.1;
+            }
+        }
+
+        function increaseVolume() {
+            if (audio.volume < 1) {
+                audio.volume += 0.1;
+            }
+        }
+        function playAudio() {
+            audio.play();
+        }
+
+        function pauseAudio() {
+            audio.pause();
+        }
+
+        function stopAudio() {
+            audio.pause();
+            audio.currentTime = 0;
+        }
+    </script>
+</body>
+
+</html>

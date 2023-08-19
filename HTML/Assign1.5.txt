@@ -1,0 +1,10 @@
+What is emmet List some of the advantages Emmet offers
+
+ans>  Emmet is a standard abbreviation syntax
+      it help devloper to write code html syntax faster
+
+      advantages:-
+      1:- abbreviated syntax
+      2:- incresead productivity
+      3:-Customizability
+      4:-language suppot

@@ -1,0 +1,19 @@
+body{
+    background-color: #373636;
+}
+h1{
+    color: #aacad9;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    display: block;
+    border: silver solid 2px;
+}
+h4{
+    color: aqua;
+    margin: 0px;
+    padding: 0px;
+}
+p{
+    margin-left: 30px;
+    color: #ceb271;
+}
