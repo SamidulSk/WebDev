@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time</title>
+</head>
+
+<body>
+    <h1>Print Time now</h1>
+    <button  id="start">Start</button>
+    <button  id="stop">Stop</button>
+    <h2 id="text">Time Now</h2>
+    <script>
+        const startButton = document.getElementById('start');
+        const stopButton = document.getElementById('stop');
+        const text = document.getElementById('text');
+        let intervalId;
+
+        startButton.addEventListener('click', () => {
+            intervalId = setInterval(() => {
+                const date = new Date();
+                text.innerHTML = date.toLocaleTimeString();
+            }, 1000);
+        });
+
+        stopButton.addEventListener('click', () => {
+            clearInterval(intervalId);
+        });
+    </script>
+</body>
+
+</html>

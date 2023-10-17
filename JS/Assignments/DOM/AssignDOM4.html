@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Sign Up Form</h1>
+    <label for="text">Name</label>
+    <input id="user" placeholder="(minimum 3 characters)" type="text"> <br>
+    <label for="email">Email</label>
+    <input placeholder="Enter your email" type="email"> <br>
+    <label for="password">Password</label>
+    <input id="pass" placeholder="(minimum 8 characters)" type="password"> <br>
+    <button id="btn" onclick="result()">Submit</button>
+
+    <script>
+        function result() {
+            let userName = document.getElementById('user').value;
+            let passWord = document.getElementById('pass').value;
+
+            if (userName.length < 3 || passWord.length < 8) {
+                alert('Form Validation failed');
+            } else {
+                alert('Form Validation successful');
+            }
+        }
+    </script>
+</body>
+
+</html>
