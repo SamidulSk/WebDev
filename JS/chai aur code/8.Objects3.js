@@ -9,3 +9,6 @@ const course={
 
 const {courseInstructor:instructor}=course
 console.log(instructor)
+
+//json: javascript object notation
+// data from api come in the form of object, array of object or object of array
