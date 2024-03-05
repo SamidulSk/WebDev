@@ -58,7 +58,7 @@ promiseFour
         console.log("The Promise was either resolve or rejected")
     })
 
-//5
+//5 handle promise using async-await
 const PromiseFive = new Promise(function (resolve, reject) {
     setTimeout(function () {
         let error = true;
@@ -81,7 +81,7 @@ async function consumePromiseFive() {
 }
 consumePromiseFive()
 
-// take data from my githum account url
+// take data from my github account url
 async function getAllAboutMe() {
     const response = await fetch('https://api.github.com/users/SamidulSk')
     const data = await response.json()
