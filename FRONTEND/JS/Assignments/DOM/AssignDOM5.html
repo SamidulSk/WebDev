@@ -1,0 +1,33 @@
+<!-- toggle imgage -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">Your Image is visible</h1>
+    <button id="btn" style="display: block; margin-bottom: 20px;" onclick="toggleImage()">Toggle Image</button>
+    <img id="image" src="./nature4 copy.jpeg" alt="">
+
+    <script>
+
+    function toggleImage(){
+        let heading =document.getElementById('heading');
+        let btn=document.getElementById('id');
+        let image=document.getElementById('image')
+        let imageState=image.style.display;
+        if(imageState==='none'){
+            heading.innerHTML='Your image is visible'
+            image.style.display='block'
+        }
+        else{
+            heading.innerHTML='Your image is hidden'
+            image.style.display='none'
+        }
+    }
+
+    </script>
+</body>
+</html>

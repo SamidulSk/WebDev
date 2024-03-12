@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+
+    <style>
+
+        * {
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1{
+            background-color: #61d80c;
+        }
+        .cbs{
+            background-color: aqua;
+        }
+        #ibs{
+            background-color: blue;
+        }
+
+        a[target]{
+            background-color: #e00f0f;
+        }
+
+        h1,h2,h3{
+            background-color: #662fff;
+        }
+        ul li{
+            background-color: #cc9c0b;
+        } 
+        header> a{
+            background-color: #23c214;
+        }
+        img ~ p{
+            background-color: #7c0db85c;
+        }
+        img+p{
+            background-color: #298dc7;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+    <h2 class="cbs">Lorem ipsum dolor sit amet.</h2>
+    <h3 id="ibs" class="cbs">Lorem ipsum dolor sit amet.</h3> -->
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <h3>Lorem ipsum dolor sit amet.</h3>
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+    <li>four</li>
+    <header>
+        <a href="#">Google</a>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <a href="#">logo</a>
+            </ul>
+        </nav>
+        <a href="#">Bing</a>
+    </header>
+
+    <div>
+        <img src="#" alt="photo">
+        <p>change me</p>
+        <p> change me too</p>
+        <div>
+            <p>change me too</p>
+        </div>
+    </div>
+    <a href="https://pwskills.com">PW skills</a>
+    <a target="_blank" href="https://ineuron.ai">iNeuron</a>
+</body>
+</html>

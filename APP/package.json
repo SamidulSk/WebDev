@@ -1,0 +1,22 @@
+{
+  "name": "application",
+  "version": "1.0.1",
+  "description": "this project is created for learn npm command",
+  "main": "script.js",
+  "scripts": {
+    "test": "num run test"
+  },
+  "keywords": [
+    "sk",
+    "pw",
+    "skills"
+  ],
+  "author": "Sk Samidul",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "react-script": "^2.0.5"
+  }
+}

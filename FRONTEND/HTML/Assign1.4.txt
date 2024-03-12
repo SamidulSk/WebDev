@@ -1,0 +1,21 @@
+List out any 3 tags we learned in this module and give a brief explanation about the tags>
+
+<a> (Anchor Tag):-  
+           The <a> tag is used to create hyperlinks or links within an HTML document.
+           It allows you to link to other web pages, documents, or specific sections within the same page.
+           It requires the "href" attribute to specify the destination URL or target location
+      example:-<a href="https://www.pwskils.com">Visit Example Website</a>
+
+<h1> to <h6> (Heading Tags):
+             Heading tags are used to define headings or titles of different levels on a webpage, 
+             from <h1> (the highest level) to <h6> (the lowest level).
+        example:-<h1>Main Heading</h1>
+                 <h2>Subheading</h2>
+
+<img> (Image Tag):
+             The <img> tag is used to insert images into an HTML document.
+             It requires the "src" attribute to specify the image source (URL or file path). 
+            It can also include attributes like "alt" (alternative text), "width," and "height"
+        example:-<img src="image.jpg" alt="Description of the Image">
+
+

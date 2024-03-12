@@ -1,0 +1,35 @@
+1.  What is a Database?
+ => A database is a structured collection of data that is organized and stored electronically in a computer system. It typically consists of tables, rows, and columns, with each column representing a specific data attribute and each row representing a record. Databases are used to store, retrieve, and manage vast amounts of information efficiently.
+For example, consider a company needing to store information about its employees, such as their names, addresses, salaries, and employment history. Instead of keeping this information in separate files or documents, they can use a database to organize and manage all this data in a structured manner.
+
+2. File-Based Storage System
+ => File-based storage systems are traditional methods of storing data where information is stored in files on a computer's file system. These files could be text files, spreadsheets, or any other type of file. However, there are several challenges associated with file-based storage systems:
+
+3. What is DBMS? What was the need of DBMS?
+
+=>DBMS stands for Database Management System. It is a software system that allows users to define, create, maintain, and control access to a database. The primary purpose of a DBMS is to provide an efficient and organized way to store and retrieve data.
+
+The need for a DBMS arose due to several reasons:
+Data Centralization: Before the advent of DBMS, data was typically stored in separate files, leading to redundancy and inconsistency. DBMS allows for centralization of data, ensuring that it is stored in a structured and organized manner.
+Data Security: With the increase in the volume of data being processed by organizations, the need for ensuring data security became paramount. DBMS provides features like access control and encryption to protect data from unauthorized access.
+Data Integrity: Maintaining the accuracy and consistency of data is crucial for any organization. DBMS offers mechanisms such as transactions and data constraints to ensure data integrity.
+Data Redundancy: Same data may be duplicated in multiple files, leading to redundancy.
+Data Inconsistency: Updates to data can lead to inconsistencies if changes are not propagated consistently across all relevant files.
+Data Isolation: Data is stored in separate files, making it difficult to access related information together.
+Data Security: File-based systems often lack robust security mechanisms to control access to data.
+What is a Database Management System (DBMS)?
+A Database Management System (DBMS) is a software tool that enables users to define, create, maintain, and control access to databases. It provides mechanisms for storing, organizing, and retrieving data in a structured format. The need for DBMS arises from the limitations of file-based systems, such as data redundancy, inconsistency, and isolation.
+
+
+4.   Challenges of File-Based Storage System Addressed by DBMS
+
+=>  When using a file-based storage system, challenges like data redundancy, inconsistency, and isolation can be mitigated by transitioning to a DBMS. A DBMS provides features such as data normalization, transaction management, concurrency control, and data integrity constraints, which help in reducing redundancy, ensuring data consistency, and facilitating efficient data access and manipulation.
+
+5. Types of Classification in DBMS
+=> There are different types of classification in DBMS, including relational, hierarchical, network, object-oriented, and NoSQL databases. Each type has its own data model and structure. Relational databases, for example, organize data into tables with rows and columns, and relationships between tables are established using keys. Hierarchical databases organize data in a tree-like structure, whereas network databases use a more flexible graph-like structure.
+
+6 . Significance of Data Modeling
+=> Data modeling is the process of designing a data model for a database, which involves defining the structure of the data, its relationships, and constraints. It helps in understanding the data requirements and designing an efficient database schema. There are different types of data modeling techniques, including conceptual, logical, and physical data modeling, each serving a specific purpose in the database development process.
+
+7.  Three Schema Architecture
+=> The Three Schema Architecture, consists of three levels: External, Conceptual, and Internal. The External level represents how users perceive the data, the Conceptual level defines the logical structure of the entire database, and the Internal level describes how data is physically stored and accessed by the computer system. This architecture provides abstraction, independence, and security in database design and management

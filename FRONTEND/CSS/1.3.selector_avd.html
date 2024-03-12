@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector avdvanced</title>
+    <style>
+        /*  h1:hover {
+            background-color: #e80c0c;
+        }*/
+        button:focus {
+            background-color: #c46363ec;
+        }
+
+        input {
+            background-color: #45af85;
+        }
+
+        input:disabled {
+            background-color: #847b7b;
+        }
+
+        div:first-child {
+            background-color: #e217b9;
+        }
+
+        div:last-child {
+            background-color: #0e79d7;
+        }
+
+        div:nth-child(2n) {
+            background-color: #0e03039a;
+        }
+
+        /* Special selectors*/
+        h1::after {
+            content: "!";
+            color: #ff0000c7
+        }
+
+        h1::before {
+            content: ">>>";
+            color: #11cc68c7
+        }
+
+        P::first-line {
+            background-color: #631ec4;
+
+        }
+
+        p::first-letter {
+            font-size: 50px;
+            color: #07c433;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+    <button>Submit</button>
+    <input type="checkbox">
+    <input type="text" required="true">
+    <input type="text" disabled="true">
+    <div>
+        <div>one</div>
+        <div>two</div>
+        <div>three</div>
+    </div>
+
+    <h1>Pseudo before and after selector</h1>
+    <h2>First letter selector</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Distinctio aliquam provident quibusdam repellat
+        quae praesentium rerum accusamus eius cupiditate vero!</p>
+</body>
+
+</html>

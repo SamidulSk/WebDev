@@ -1,0 +1,69 @@
+<!-- pokemon card -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{
+            text-align: center;
+        }
+        .container{
+            position: relative;
+        }
+      .card{
+        position: absolute;
+        width: 250px;
+        height: 370px;
+        font-size: 20px;
+        color:#f5edeed7
+      }
+ 
+    .first{
+        background-color: #37b50d;
+        z-index: 1;
+        top:30px;
+        left: 60px;
+    }
+    .one{
+        margin: 50px;
+        height: 200px;
+        width: 150px;
+    }
+    .second{
+        background-color: #1bc2e3;
+        z-index: 2;
+        top:60px;
+        left: 90px;
+    }
+    .two{
+        margin: 50px;
+        height: 200px;
+        width: 150px;
+    }
+    .third{
+        background-color: #6d1edb;
+        z-index: 3;
+        top:90px;
+        left: 120px;
+    }
+    .three{
+        margin: 50px;
+        height: 200px;
+        width: 150px;
+    }
+    .card:hover{
+        z-index: 5;
+    }
+    </style>
+</head>
+<body>
+    <h3>Hover to unveil The Pokemon</h3>
+<div class="container">
+    <div class="card first"> Card 1<img src="./pokemon1.png" alt="" class="one"></div>
+    <div class="card second"> Card 2<img src="./pokemon2.jpg" alt="" class="two"></div>
+    <div class="card third"> Card 3<img src="./pokemon3.png" alt="" class="three"></div>
+</div>
+</body>
+</html>
