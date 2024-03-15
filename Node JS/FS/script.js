@@ -61,5 +61,5 @@ fs.close(fd,function(err){
     }
 })
 
-delete
+//delete
 fs.unlink('input.txt');

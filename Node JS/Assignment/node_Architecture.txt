@@ -1,0 +1,1 @@
+Node.js is a JavaScript runtime environment that executes JavaScript code outside of a browser. It is built on Chromes V8 JavaScript engine and uses an event-driven, non-blocking I/O model that makes it lightweight and efficient.
