@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+  font-family: "Poppins";
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #000;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.support {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  color: red;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  gap: 0 0.85rem;
+}
+
+h1 {
+  font-size: 42px;
+  color: #fff;
+}
+
+ul {
+  background: #111;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 64rem;
+  list-style: none;
+  padding: 3rem;
+  display: grid;
+  gap: 6rem;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 1fr 1fr auto;
+}
+
+/* Buttons */
+#B1 {
+  width: 184px;
+  height: 64px;
+  border-radius: 18px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  background: #2c82f8;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  box-shadow: 0 3px 10px #2c82f8, 0px -3px 1px rgba(0, 0, 0, 0.15) inset;
+}
+#B1:hover {
+  background: rgba(44, 130, 248, 0.9);
+}
+
+#B2 {
+  width: 160px;
+  height: 56px;
+  position: relative;
+  background: linear-gradient(0deg, #3f99ea 25%, rgba(125, 63, 248, 0.74) 100%);
+  border-radius: 60px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 450;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), inset 3px -5px 15px #50cfe6,
+    inset -3px -5px 15px #50cfe6;
+  transition: ease 0.2s;
+  border: 3px solid rgba(255, 255, 255, 0.6);
+}
+
+#B2:after {
+  content: "Get Started";
+  position: absolute;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: linear-gradient(0deg, #3f99ea 100%, #7e41f8 100%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), inset 3px -5px 15px #50cfe6,
+    inset -3px -5px 15px #50cfe6;
+  opacity: 0;
+  transition: all 0.15s ease-in-out;
+  border-radius: 50px;
+}
+
+#B2:hover:after {
+  opacity: 1;
+}
+
+#B3 {
+  width: 144px;
+  height: 54px;
+  background: #ffef00;
+  border: 3px solid #111;
+  color: #222;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+#B3:hover {
+  box-shadow: 5px 5px 0px #111;
+}
+
+#B4 {
+  width: 152px;
+  height: 52px;
+  background: #94ee42;
+  border: 1px solid rgba(99, 187, 17, 1);
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  box-shadow: 0 0 8px #94ee42, inset 0 0 8px rgba(109, 205, 19, 0.2);
+}
+
+#B5 {
+  width: 148px;
+  height: 48px;
+  background: #958462 #55454f;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(85, 69, 79, 1) 60%,
+    rgba(149, 143, 98, 1) 100%
+  );
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  box-shadow: inset 2px 0 0px rgba(255, 255, 255, 0.2),
+    inset -2px 0 0px rgba(255, 255, 255, 0.2),
+    inset 0 2px 0px rgba(255, 255, 255, 0.2),
+    inset 0 -2px 0px rgba(255, 255, 255, 0.2);
+}
+
+#B5:after {
+  content: "BUY";
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(85, 69, 79, 1) 60%,
+    rgba(149, 143, 98, 1) 100%
+  );
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 2px 0 0px rgba(255, 255, 255, 0.2),
+    inset -2px 0 0px rgba(255, 255, 255, 0.2),
+    inset 0 2px 0px rgba(255, 255, 255, 0.2),
+    inset 0 -2px 0px rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+#B5:hover:after {
+  opacity: 1;
+}
+
+#B5:focus {
+  box-shadow: 0px 0px 26px rgba(149, 132, 98, 0.5),
+    inset 2px 0 0px rgba(255, 255, 255, 0.2),
+    inset -2px 0 0px rgba(255, 255, 255, 0.2),
+    inset 0 2px 0px rgba(255, 255, 255, 0.2),
+    inset 0 -2px 0px rgba(255, 255, 255, 0.2);
+}
+
+/* Theme Switch */
+#theme-toggle {
+  background: rgba(204, 204, 204, 0.1);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+#theme-toggle:hover {
+  background: rgba(204, 204, 204, 0.2);
+}
+
+.light1 {
+  background-color: #fff;
+}
+
+.light2 {
+  background-color: #ccc;
+}
+
+    </style>
+</head>
+<body>
+    <body>
+        <h1>
+          Modern Ui Buttons
+        </h1>
+      
+        <div class='support'>
+          <img src="https://i.postimg.cc/5Nb5XrFn/palestine.png" alt='Al-Aqsa Mosque'>
+          <p>Free Palestine</p>
+        </div>
+      
+        <ul>
+          <li>
+            <button id="B1" type="button">Downloud <i class="fa-solid fa-circle-down"></i></button>
+          </li>
+          <li>
+            <button id="B2" type="button">Get Started</button>
+          </li>
+          <li>
+            <button id="B3" type="button">Contact</button>
+          </li>
+          <li>
+            <button id="B4" type="button">Save <i class="fa-solid fa-check"></i></button>
+          </li>
+          <li>
+            <button id="B5" type="button">Titanium <i class="fa-brands fa-apple"></i></button>
+          </li>
+          <li>
+            <i class="fa-solid fa-sun fa-xl" id="theme-toggle"></i>
+          </li>
+        </ul>
+        <script src="https://kit.fontawesome.com/2c1b23ff4c.js" crossorigin="anonymous"></script>
+      
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+      </body>
+</body>
+<script>
+    var themeSwitch = document.querySelector("#theme-toggle");
+var theme = "dark";
+
+themeSwitch.addEventListener("click", () => {
+  if (theme == "dark") {
+    $("body").addClass("light1");
+    $("h1").css("color", "#111");
+    $("ul").addClass("light2");
+    $(themeSwitch).removeClass("fa-sun");
+    $(themeSwitch).addClass("fa-moon");
+    $(themeSwitch).css("color", "#111");
+    $(themeSwitch).css("background-color", "rgba(0,0,0,0.1)");
+    theme = "light";
+  } else if (theme == "light") {
+    $("body").removeClass("light1");
+    $("ul").removeClass("light2");
+    $("h1").css("color", "#fff");
+    $(themeSwitch).addClass("fa-sun");
+    $(themeSwitch).removeClass("fa-moon");
+    $(themeSwitch).css("color", "#fff");
+    $(themeSwitch).css("background-color", "rgba(204, 204, 204, 0.1)");
+    theme = "dark";
+  }
+});
+
+</script>
+</html>
