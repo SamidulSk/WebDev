@@ -10,7 +10,7 @@ const productSchema=new mongoose.Schema( {
     required:true,
   },
  productImage:{
-    type:String,
+    type:String, // cloudinary url
     required:true,
   },
   price:{

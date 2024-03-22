@@ -7,4 +7,4 @@ const categorySchema=new mongoose.Schema( {
   }
 },{timestamps:true})
 
-export const category =mongoose.model("Category",categorySchema)
+export const Category =mongoose.model("Category",categorySchema)
