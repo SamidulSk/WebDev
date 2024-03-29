@@ -1,0 +1,199 @@
+/* Your CSS here */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "-apple-system", BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  }
+  
+  .container {
+    width: 100%;
+  }
+  
+  .content-container {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .instagram-logo {
+    display: block;
+    margin: auto;
+    width: 80%;
+  }
+  
+  input[type="text"], input[type="password"] {
+    background-color: rgb(250, 250, 250);
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: block;
+    font-family: "-apple-system", BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    height: 38px;
+    margin: 5px auto;
+    padding-left: 7px;
+    width: 270px;
+  }
+  input[type="email"], input[type="password"] {
+    background-color: rgb(250, 250, 250);
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: block;
+    font-family: "-apple-system", BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    height: 38px;
+    margin: 5px auto;
+    padding-left: 7px;
+    width: 270px;
+  }
+  
+  input[type="submit"] {
+    background: rgb(0, 149, 246);
+    border: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: white;
+    display: block;
+    height: 32px;
+    margin: 15px auto;
+    width: 270px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .line-break {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    height: 15px;
+    justify-content: space-between;
+    margin: auto;
+    width: 270px;
+  }
+  
+  .line {
+    background: rgb(219, 219, 219);
+    height: 1px;
+    width: 40%;
+  }
+  
+  .or, footer a, footer p, select{
+     color: #737373;
+  }
+  
+  .or {
+    text-transform: uppercase;
+  }
+  
+  .facebook-login-container, .forgot-password, .sign-up-container {
+    margin: 30px;
+    text-align: center;
+  }
+  
+  .facebook-login {
+    color: #385185;
+    font-weight: 600;
+  }
+  
+  .facebook-icon {
+    margin: -3px 5px;
+    width: 16px;
+  }
+  
+  .forgot-password {
+    color: #00376B;
+    font-size: 12px;
+  }
+  
+  .sign-up-container {
+    margin: 50px;
+  }
+  
+  
+  .get-the-app {
+    margin: 50px;
+    text-align: center;
+  }
+  
+  .get-the-app-image-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .get-the-app-image{
+    height: 40px;
+    margin: 5px;
+    width: 135px;
+  }
+  
+  footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    list-style-type: none;
+    justify-content: center;  
+  }
+  
+  footer li {
+    margin: 10px;
+  }
+  
+  select {
+    border: none;
+    margin-right: 15px;
+  }
+  
+  .language-copyright-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 40px;;
+  }
+  
+  @media screen and (min-width: 451px) {
+    .content-container {
+      margin-top: 30px;
+    }
+    
+    .log-in-container, .sign-up-container{
+      border: solid rgb(219, 219, 219) 1px; 
+      box-sizing: border-box;
+      margin: 10px auto;
+      width: 350px;
+    }
+    
+    .sign-up-container {
+      align-items: center;
+      display: flex;
+      height: 63px;
+      justify-content: center;
+    }
+  }
+  
+  
+  @media screen and (min-width: 876px) {
+    .container {
+      align-items: center;
+      display: flex;
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 32px auto;
+      width: 870px;
+    }
+    
+    .content-container {
+      width: 50%;
+    }
+    
+    .image-container {
+      background: url("https://assets.codepen.io/6060109/IG-phone.jpeg");
+      background-size: contain;
+      height: 580px;
+      width: 380px;
+    }
+  }
