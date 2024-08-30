@@ -41,7 +41,7 @@ const arrOfObj = [
 
 //console.log(arrOfObj[1]) //  { name: 'samidul', age: 34 }
 
-//console.log(Object.keys(tinderUser)) //[ 'id', 'name', 'isLoggedIn' ]
+//console.log(Object.keys(tinderUser)) //[ 'id', 'name', 'isLoggedIn' ] remember this is a array***
 console.log(Object.values(regularUser))
 
 console.log(Object.entries(tinderUser))//[ [ 'id', '123abc' ], [ 'name', 'Sammy' ], [ 'isLoggedIn', false ] ]

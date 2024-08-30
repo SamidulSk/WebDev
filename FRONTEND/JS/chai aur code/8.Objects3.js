@@ -5,10 +5,10 @@ const course={
     price:"999",
     courseInstructor:"hitesh"
 }
-//console.log(course.courseInstructor)  // not problem by but ....
+//console.log(course.courseInstructor)  // not problem but ....
 
-const {courseInstructor:instructor}=course
-console.log(instructor)
+const {courseInstructor:instruc}=course
+console.log(instruc)
 
 //json: javascript object notation
 // data from api come in the form of object, array of object or object of array

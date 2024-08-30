@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Table Example</title>
+    <style>
+        table {
+            width: 60%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align:center;">Student Grades Table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Roll Number</th>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>Alice</td>
+                <td>Mathematics</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Bob</td>
+                <td>Physics</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Charlie</td>
+                <td>Chemistry</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>104</td>
+                <td>David</td>
+                <td>Biology</td>
+                <td>C</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

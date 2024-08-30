@@ -10,10 +10,10 @@
 // let myCreateDate2=new Date("01-14-2023")
 // console.log(myCreateDate2.toLocaleDateString()) //1/14/2023
 
-// let myTimeStamp=Date.now()
+// let myTimeStamp=Date.now() // in milisecond
 // console.log(myTimeStamp)
 // console.log(myCreateDate.getTime())
-// console.log(Math.floor(Date.now()/1000))
+// console.log(Math.floor(Date.now()/1000)) // in second without decimal
 
 
 let newDate=new Date()

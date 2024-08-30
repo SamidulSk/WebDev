@@ -24,11 +24,11 @@
 // const arr=new Array(0,1,2,3,4,5,6)
 // console.log("A" ,arr)
 
-// const myArr1=arr.slice(1,3)
+// const myArr1=arr.slice(1,3)  // it does'nt manupulate the original array
 // console.log(myArr1)
 // console.log("B",arr)
 
-// const myArr2=arr.splice(1,3)
+// const myArr2=arr.splice(1,3)   // it manupulate the original array ,also ending index in included
 // console.log(myArr2)
 // console.log("C",arr)
 
@@ -42,8 +42,8 @@ console.log(all_heors)
 const all_hero=[...marvel_heros,...dc_heros]
 console.log(all_hero)
 
-console.log(Array.isArray("samidul"))
-console.log(Array.from("samidul"))
+console.log(Array.isArray("samidul")) //false
+console.log(Array.from("samidul"))  //charecter array
 
 console.log(Array.from({name:"hitesh"})); //[]
 

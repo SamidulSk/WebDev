@@ -16,7 +16,8 @@ const jsUser={
 
 console.log(jsUser.email)
 console.log(jsUser["full Name"])
-console.log(mySym)
+console.log(jsUser.mySym)  //string
+console.log(jsUser[mySym]) // object
 console.log(typeof mySym)
 
 jsUser.location="Delhi"
