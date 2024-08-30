@@ -1,8 +1,8 @@
 const balance=new Number(100)
 console.log(balance)  //[Number: 100]
 console.log(balance.toString())//100
-console.log(balance.toFixed(3))//100.000 
-console.log(balance.toPrecision(4)) //100.0
+console.log(balance.toFixed(2))//100.000 
+console.log(balance.toPrecision(4)) //100.0 precise value
 
 const hundrends=100000
 console.log(hundrends.toLocaleString('en-IN'))
