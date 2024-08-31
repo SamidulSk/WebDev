@@ -6,15 +6,15 @@ tinderUser.name = "Sammy"
 tinderUser.isLoggedIn = false
 //console.log(tinderUser)
 
-const regularUser = {
-    email: "someone@gmail.com",
-    fullname: {
-        userfullname: {
-            fisstname: "hitesh",
-            lastname: "choudhary"
-        }
-    }
-}
+// const regularUser = {
+//     email: "someone@gmail.com",
+//     fullname: {
+//         userfullname: {
+//             fisstname: "hitesh",
+//             lastname: "choudhary"
+//         }
+//     }
+// }
 //console.log(regularUser.fullname)
 
 // merge two objects -> process 1

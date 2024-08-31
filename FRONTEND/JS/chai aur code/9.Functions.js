@@ -11,10 +11,17 @@ function addNum(num1,num2){
 
 const final=addNum(3,6)
 console.log(final)
+//
+
+function loginUser(username){
+    return `${username} just login`
+}
+console.log(loginUser("Hossain"))
+
 
 ///rest operator
-function calculateCartPrice(...num){
-    return num
+function calculateCartPrice(val1, ...num){
+    return num   // return a array of values
 }
 console.log(calculateCartPrice(200,400,500,2000))
 
@@ -24,7 +31,7 @@ const user={
     prices:199
 }
 function handleObject(anyObject){
-    console.log(` username is ${anyObject.userName} and price is ${anyObject.price}`)
+    console.log(` username is ${anyObject.userName} and price is ${anyObject.priceeeeeeeee}`)
 }
 
 handleObject(user)
@@ -35,3 +42,18 @@ function myfunReturnFirst(arr){
 }
 
 myfunReturnFirst([3,4,5])
+
+// HOISTING
+console.log(cubeNum(3));
+
+function cubeNum(n) {
+    return n ** n;
+}
+
+
+//  expression -> variable hold the function
+
+//console.log(num(3))
+const num= function(n){
+    return n**n;
+}

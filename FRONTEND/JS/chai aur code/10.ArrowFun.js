@@ -12,23 +12,23 @@
 // user.username = "sam"
 // user.welcomeMessage()
 
-// console.log(this)  // this return current context which is empty object{} -> because we are in node environment
+//console.log(this)  //***this return current context which is empty object{} -> because we are in node environment
 
 // Arrow functioon
 
-// const chai =() => {
-//   let username="samidul"
-//   console.log(this);
-// }
-// chai()
-
-const addTwo=(num1,num2)=>{
-    return num1+num2
+const chai =() => {
+  let username="samidul"
+  console.log(this);
 }
-console.log(addTwo(3,5))
+chai()
+// ()=>{}- explicit reuturn
+// const addTwo=(num1,num2)=>{
+//     return num1+num2
+// }
+// console.log(addTwo(3,5))
 
-// implicit return
-const addtwo=(num1,num2)=> (num1+num2)
+// ()=>() implicit return 
+// const addtwo=(num1,num2)=> (num1+num2)
     
-console.log(addtwo(3,5))
+// console.log(addtwo(3,5))
 

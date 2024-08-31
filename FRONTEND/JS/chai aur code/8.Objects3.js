@@ -10,5 +10,5 @@ const course={
 const {courseInstructor:instruc}=course
 console.log(instruc)
 
-//json: javascript object notation
+//json: javascript object notation { "key" :"value" }
 // data from api come in the form of object, array of object or object of array

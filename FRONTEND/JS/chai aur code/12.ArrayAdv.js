@@ -5,14 +5,14 @@ for (const element of arr) {
 }
 
 const gretting = "Hello world!"
-for (const char of gretting) {
-    if (char == ' ') {
+for (const ch of gretting) {
+    if (ch == ' ') {
         break;
     }
     //  console.log(char)
 }
 
-const map = new Map() // unique value
+const map = new Map() // unique value - COLLECTION OF KEY VALUE PAIRS
 map.set('IN', "India")
 map.set('USA', "United states of America")
 map.set('FR', "France")
@@ -27,8 +27,9 @@ map.set('IN', "India")
 // for (const [key,value] of map) {  // de-structure
 //     console.log(value)
 // }
-// for of loop is not aplicable on object
+// ***for of loop is not aplicable on object
 
+// INRODUCING FOR IN LOOP
 // const myObject={
 //     js:"javascript",
 //     cpp:"C++",
@@ -54,14 +55,14 @@ const coding = ["js", "ruby", "java", "python", "cpp"]
 //     console.log(item)
 // })
 
-coding.forEach((element) => {
+coding.forEach((element) => { // arrow
     // console.log(element)
 })
 
-// function printMe(element){
-//     console.log(element)
-// }
-// coding.forEach(printMe)
+function printMe(element,num,val){
+   // console.log(element,num,val) 
+}
+coding.forEach(printMe)
 
 // coding.forEach((item, index, arr) => {
 //     console.log(item, index, arr)
