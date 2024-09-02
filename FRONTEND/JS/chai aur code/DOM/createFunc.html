@@ -16,7 +16,7 @@
     function addLanguage(langname) {
         const li = document.createElement('li')
         li.innerHTML = langname
-        document.querySelector('.language').appendChild(li)
+        document.querySelector('.language').appendChild(li)// traverce through whole tree and append to the last
     }
     addLanguage('python')
     addLanguage('typeScript')
@@ -24,7 +24,7 @@
     function addOptimized(langName) {
         const li = document.createElement('li')
         li.appendChild(document.createTextNode(langName))
-        document.querySelector('.language').appendChild(li)
+        document.querySelector('.language').appendChild(li) 
     }
     addOptimized('java')
 

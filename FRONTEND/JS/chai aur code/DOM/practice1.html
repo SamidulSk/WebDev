@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Practice</title>
+    <style>
+        .green{
+            color: green;
+        }
+    </style>
+</head>
+<body style="background-color: #212121 ;color: #fff">
+    <div class="demo">
+        <h1 id="heading">Hello I am learning DOM manipulation</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, id.</p>
+    </div>
+</body>
+<script>
+    const heading = document.getElementById('heading');
+    heading.innerText = "Hello I am learning JS";
+    heading.style.color = "red";
+
+    const para = document.getElementsByTagName('p')[0]; // Access the first <p> element
+    para.setAttribute('class', 'green');
+</script>
+</html>
