@@ -2,7 +2,7 @@ const descripter = Object.getOwnPropertyDescriptor(Math, "PI")
 
 // console.log(descripter);
 
-// console.log(Math.PI);
+// console.log(Math.PI);  //3.145
 // Math.PI = 5
 // console.log(Math.PI);
 

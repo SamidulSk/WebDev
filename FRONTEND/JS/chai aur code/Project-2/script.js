@@ -24,7 +24,7 @@ form.addEventListener('submit', function (e) {
     else if (bmi >= 18.6 && bmi < 24.9) {
         suggestion.innerHTML = "Wow!! You are in the normal range of BMI"
     }
-    else {
+    else if(bmi>=24.9) {
         suggestion.innerHTML = "You are overweight"
     }
 })

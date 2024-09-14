@@ -1,7 +1,7 @@
 // let myName = "hitesh     "
 // let mychannel = "chai     "
 
-// console.log(myName.trueLength);
+// console.log(myName.trueLength());  // we want to inject new method to string that is trueLength
 
 
 let myHeros = ["thor", "spiderman"]
@@ -24,10 +24,10 @@ Array.prototype.heyHitesh = function(){
     console.log(`Hitesh says hello`);
 }
 
-// heroPower.hitesh()
-// myHeros.hitesh()
-// myHeros.heyHitesh()
-// heroPower.heyHitesh()
+// heroPower.hitesh()  // yes
+// myHeros.hitesh()  //yes
+// myHeros.heyHitesh() // yes
+// heroPower.heyHitesh() //NO
 
 // inheritance
 

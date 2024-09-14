@@ -1,3 +1,4 @@
+// promise is a object
 //1
 const promiseOne = new Promise(function (resolve, reject) {
     // Do an async task
@@ -24,7 +25,7 @@ new Promise(function (resolve, reject) {
 
 //3
 const PromiseThree = new Promise(function (resolve, reject) {
-    setTimeout(function () { }, 1000)
+    setTimeout(function () { }, 1000);
     resolve({ username: "chai", email: "chai@example.gmail.com" })
 })
 PromiseThree.then(function (user) {

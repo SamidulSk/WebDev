@@ -22,21 +22,21 @@
 
     // function outer(){
     //     let username = "hitesh"
-    //     console.log("OUTER", secret);
+    //     console.log("OUTER", secret); // no _> chote bado se mangle te hai par bado choto se nahi
     //     function inner(){
     //         let secret = "my123"
-    //         console.log("inner", username);
+    //         console.log("inner", username); //ok
     //     }
     //     function innerTwo(){
-    //         console.log("innerTwo", username);
-    //         console.log(secret);
+    //         console.log("innerTwo", username); // ok 
+    //         console.log(secret);  // no access -> bap se lelo par vai se nahi
     //     }
     //     inner()
     //     innerTwo()
 
     // }
     // outer()
-    // console.log("TOO OUTER", username);
+    // console.log("TOO OUTER", username);  // no access
 
 
     // function makeFunc() {
@@ -57,7 +57,7 @@
         // }
         // document.getElementById("green").onclick = function(){
         //     document.body.style.backgroundColor = `green`
-        // }
+        // } 
 
         function clickHandler(color){
             // document.body.style.backgroundColor = `${color}`
