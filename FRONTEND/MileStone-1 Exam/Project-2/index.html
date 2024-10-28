@@ -7,6 +7,348 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Hospital Landing page</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.head{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding: 20px;
+
+}
+.list{
+    display: flex;
+    text-decoration: none;
+}
+.butt{
+    padding: 12px 24px;
+    background-color: #424294;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+}
+.content{
+    display: flex;
+    gap: 400px;
+}
+.left-content{
+    margin-top: 200px;
+    margin-left: 200px;
+    color: white;
+}
+.left-content>h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+  
+}
+.left-content>p{
+    margin-bottom: 25px;
+}
+.left-content>.button>.butt-1{
+  padding: 12px 20px;
+  background-color: #4f4f99a3;
+   border-radius: 15px;
+   color: white;
+}
+.left-content>.button>.butt-2{
+  padding: 12px 20px;
+ color: white;
+   border-radius: 15px;
+   background-color: transparent;
+}
+
+.right-content{
+    height: 470px;
+    width: 350px;
+    background-color: white;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    border-radius: 10px;
+    padding: 15px;
+    padding-right: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+    
+}
+.right-content>h3{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+.right-content label {
+    font-weight: bold; 
+    display: block; 
+    margin-bottom: 10px; 
+}
+
+/* Style text inputs */
+.right-content input[type="text"],
+.right-content input[type="email"] {
+    width: 100%; /* Expand input width to 100% of container */
+    padding: 10px; /* Add padding for input fields */
+    margin-bottom: 15px; /* Add spacing between input fields */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Rounded corners for inputs */
+    margin-right: 15px;
+}
+
+/* Style select elements */
+.right-content select {
+    width: 100%; /* Expand select width to 100% of container */
+    padding: 10px; /* Add padding for select elements */
+    margin-bottom: 15px; /* Add spacing between select elements */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Rounded corners for selects */
+}
+
+
+.right-content button {
+    background-color: #007bff; 
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+
+    /* Center button within its container */
+    display: block;
+    margin: 0 auto;
+}
+
+/* Change button background color on hover */
+.right-content button:hover {
+    background-color: #0056b3;
+}
+
+/* care section */
+/* Style the "care" section */
+.care {
+    background-color: #f5f5f5; /* Background color */
+    padding: 20px; /* Padding for spacing */
+}
+
+/* Style the headings inside "care" section */
+.care h1 {
+    font-size: 24px; /* Font size */
+    margin-bottom: 10px; /* Add spacing below headings */
+}
+
+/* Style the paragraphs inside "care" section */
+.care p {
+    margin-bottom: 20px; /* Add spacing below paragraphs */
+}
+
+/* Style the "cases" container */
+.care .cases {
+    display: flex; /* Display cases in a row */
+    justify-content: space-between; /* Space evenly between cases */
+    margin-top: 20px; /* Add spacing above cases */
+}
+
+/* Style individual case containers */
+.care .cases > div {
+    flex: 0 0 calc(33.33% - 10px); /* Set width for each case */
+    background-color: #fff; /* Case background color */
+    padding: 20px; /* Padding for each case */
+    border: 1px solid #ddd; /* Case border */
+    border-radius: 5px; /* Rounded corners for cases */
+    text-align: center; /* Center content */
+}
+
+/* Style the ordered list inside cases */
+.care .cases ol {
+    text-align: left; /* Align list items to the left */
+    margin-left: 20px; /* Add margin for list items */
+}
+
+/* Style the "Learn More" link */
+.care .cases p {
+    font-weight: bold; /* Make the "Learn More" text bold */
+    color: #007bff; /* Link color */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+/* Style the "doctors" container */
+.care .doctors {
+    display: flex; /* Display doctors in a row */
+    justify-content: space-between; /* Space evenly between doctors */
+    margin-top: 20px; /* Add spacing above doctors */
+    margin-bottom: 20px;
+}
+
+/* Style individual doctor containers */
+.care .doctors > div {
+    flex: 0 0 calc(33.33% - 10px); /* Set width for each doctor */
+    background-color: #fff; /* Doctor background color */
+    padding: 20px; /* Padding for each doctor */
+    border: 1px solid #ddd; /* Doctor border */
+    border-radius: 5px; /* Rounded corners for doctors */
+    text-align: center; /* Center content */
+}
+
+/* Style images inside doctor containers */
+.care .doctors img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+}
+
+.title{
+    text-align: center;
+    margin: 60px 80px;
+}
+.top{
+    text-align: center;
+    background-color: #4444c1;
+    padding: 40px 55px;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+}
+.bottom{
+    margin: 20px;
+}
+.bottom>p{
+    margin: 20px;
+    color: antiquewhite;
+    font-family: serif;
+    line-gap-override: inherit;
+}
+.faq{
+    margin: 50px;
+}
+.slides{
+    display: grid;
+    grid-template-columns: 470px 470px 470px;
+    grid-gap: 2px;
+    text-align: center;
+}
+.slide{
+    max-width: 350px;
+    background-color: #fdfbfb;
+    margin: 5px;
+    padding: 30px;
+    border-radius: 12px;
+}
+.sales{
+    display: flex;
+    gap: 1px;
+    justify-content: center;
+    margin-bottom: 50px;
+    
+}
+
+.sales-1{
+    
+    height: 450px;
+    width: 300px;
+    background-color: #ede9e9;
+    border: 3px solid blue;
+    border-radius: 8px;
+    text-align: center;
+
+}
+.sales-1>h3{
+    margin: 20px;
+}
+.sales-1>h1{
+    margin: 20px;
+}
+.sales-1>p{
+    margin: 20px;
+}
+.sales-1>button{
+    margin: 20px;
+    padding: 12px 26px;
+    background-color: #44447d;
+    border-radius: 10px;
+}
+.sales-2{
+    background-color: #2f2b2b;
+    color: white;
+    
+}
+.data{
+    height: 200px;
+    background-color: #1b1b35;
+    color: white;
+    display: flex;
+    gap: 400px;
+    width: 100%;
+   
+}
+.info{
+    margin: 60px 90px;
+}
+.mail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+.mail>input{
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+.mail>button{
+    padding: 10px 20px;
+    background-color: #3d3d6c;
+    border-radius: 8px;
+}
+
+.foot{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+.foot>div>p{
+    margin: 8px;
+    color: grey;
+}
+/* styles.css */
+/* styles.css */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow below the footer */
+}
+
+footer p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+footer p::before {
+    content: "\00a9"; /* Add a copyright symbol before your name */
+    padding-right: 5px;
+}
+
+footer p a {
+    color: #ff6600;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer p a:hover {
+    color: #ff9900;
+}
+
+
+    </style>
 </head>
 
 <body>
