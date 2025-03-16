@@ -119,3 +119,4 @@ dist
 .pnp.*
 node_modules
 # End of https://mrkandreev.name/snippets/gitignore-generator/#Node
+REACT/first-app

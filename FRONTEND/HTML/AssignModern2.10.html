@@ -28,6 +28,10 @@ input type for the password field, and the checkbox input y*pe for the terms and
             <input type="checkbox" id="terms" name="terms" required>
             I agree to the terms and conditions
         </label>
+        <label for="selfie">Take a picture of your face:</label>
+        <input type="file" id="selfie" name="selfie" accept="image/*" capture="user" />
+        <label for="picture">Take a picture using back facing camera:</label>
+        <input type="file" id="picture" name="picture" accept="image/*" capture="environment" />
 
         <button type="submit">Register</button>
     </form>
