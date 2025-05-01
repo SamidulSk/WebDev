@@ -3,7 +3,7 @@ const express=require('express');  // import express
 const app=express(); // generate instance
 
 const hostname='localhost';
-const PORT=4010; // alocate port
+const PORT=4000; // alocate port
 
 app.get('/', (req,res)=>{
     res.send("hello world!!!!!");
