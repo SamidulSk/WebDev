@@ -19,9 +19,6 @@ function App() {
   return (
 
     <>
-      
-
-
       <h1>Chai and backend with SK</h1>
       <p>JOKES:{jokes.length}</p>
 
